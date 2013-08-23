@@ -25,9 +25,10 @@ _serverProfiles(){
     if [ -d "${serverdir}" ]
     then
  
-      IFS=$'\n' tmp=( $(compgen -W "$(ls "${serverdir}" | grep xml)" -- "$cur" ))
-      COMPREPLY=( "${tmp[@]// /\ }" )
-          unset IFS
+      IFS=$'\n' tmp="$(ls "${serverdir}" | grep xml)"
+        local fls="${tmp[@]// /\ }"
+      unset IFS
+      COMPREPLY=( $(compgen -W "${fls} initial boot last v" -- "$cur" ))
     fi
 }
 
