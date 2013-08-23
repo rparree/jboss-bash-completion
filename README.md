@@ -4,6 +4,11 @@ jboss-bash-completion
 JBoss Bash Completion for JBoss 5 and 7 (EAP 6)
 
 
+Overview
+--------
+
+Completion for the `run.sh` (JBoss5) and `standalone.sh`/`domain.sh`
+
 Install
 -------
 
@@ -14,6 +19,6 @@ RHEL/CenOS: `yum install bash-completion`
 
 Copy the file(s) to your `/etc/bash_completion.d` folder:
 
-`sudo cp jboss* `/etc/bash_completion.d`
+`sudo cp jboss\* `/etc/bash_completion.d`
 
 
