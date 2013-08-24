@@ -24,7 +24,7 @@ Some of the options available in jboss7:
 Install
 -------
 
-Make sure you have installed bash_completion:
+Make sure you have installed bash_completion 1.3 (or higher):
 
 Debian/Ubuntu: `apt-get install bash-completion`
 RHEL/CenOS: `yum install bash-completion`
