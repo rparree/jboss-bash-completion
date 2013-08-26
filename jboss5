@@ -6,7 +6,7 @@
 
 
 
-_serverProfiles(){
+_serverProfiles5(){
  # from http://unix.stackexchange.com/questions/34238/complete-files-from-a-different-directory-in-bash
     if [ -d "../server" ]
     then
@@ -18,7 +18,7 @@ _serverProfiles(){
     fi
 }
 
-_bindingAddress(){
+_bindingAddress5(){
   # from /etc/bash_completion.d/ssh
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W \
     "0.0.0.0 $( PATH="$PATH:/sbin" ifconfig -a | \
@@ -27,7 +27,7 @@ _bindingAddress(){
     -- "$cur" ) )
 }
 
-_jboss()
+_jboss5()
 {
     
     local cur prev words cword
@@ -73,11 +73,11 @@ _jboss()
             return 0
             ;;
         -b)
-            _bindingAddress
+            _bindingAddress5
             return 0
             ;;
         -c)
-            _serverProfiles
+            _serverProfiles5
             return 0
             ;;
         *)
@@ -92,4 +92,4 @@ _jboss()
 
   
 }
-complete -o nospace -F _jboss run.sh
+complete -o nospace -F _jboss5 run.sh
