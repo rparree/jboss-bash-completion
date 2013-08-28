@@ -12,7 +12,7 @@ _serverProfiles(){
       serverdir="../standalone/configuration/"
     else
        # assume is domain.sh
-      serverdir="../standalone/domain/"
+      serverdir="../domain/configuration/"
     fi
     
     for i in  ${!COMP_WORDS[*]}
