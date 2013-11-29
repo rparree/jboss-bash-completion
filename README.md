@@ -3,6 +3,8 @@ jboss-bash-completion
 
 JBoss Bash Completion for JBoss 5 and 7 (EAP 6)
 
+**IMPORTANT** *just found out at least the jboss7 completions with an euals-signs no longer works (on a clean ubuntu install). Might work for others, not sure as of this moment*
+
 
 Overview
 --------
@@ -27,7 +29,7 @@ Install
 Make sure you have installed bash_completion 1.3 (or higher):
 
 Debian/Ubuntu: `apt-get install bash-completion`
-RHEL/CenOS: `yum install bash-completion`
+RHEL/CentOS: `yum install bash-completion`
 
 Copy the file(s) to your `/etc/bash_completion.d` folder:
 
