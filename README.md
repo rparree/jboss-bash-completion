@@ -3,7 +3,7 @@ jboss-bash-completion
 
 JBoss Bash Completion for JBoss 5 and 7 (EAP 6)
 
-**IMPORTANT** *just found out at least the jboss7 completions with an euals-signs no longer works (on a clean ubuntu install). Might work for others, not sure as of this moment*
+**IMPORTANT** *just found out at least the jboss7 completions with an equals-signs no longer works (on a clean ubuntu install). Might work for others, not sure as of this moment*
 
 
 Overview
